@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.itsapp.BuildConfig
+import com.example.itsapp.menu.MenuActivity
 import com.example.itsapp.create_account.CreateAccountActivity
 import com.example.itsapp.databinding.ActivityLoginBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -35,6 +36,12 @@ class LoginActivity: AppCompatActivity() {
     }
 
     private fun initListener() {
+        binding.buttonLogin.setOnClickListener {
+            intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+
+        }
+
         binding.textViewCreateAccount.setOnClickListener {
             intent = Intent(this, CreateAccountActivity::class.java)
             startActivity(intent)
