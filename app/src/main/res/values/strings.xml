@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">ItsApp</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="ingresa_para_continuar">Por favor ingresa para continuar</string>
 
     <string name="nombre_de_usuario">Nombre de usuario</string>
     <string name="clave">Contraseña</string>
@@ -7,6 +9,7 @@
 
     <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
     <string name="crear_cuenta">Crear cuenta</string>
+    <string name="por_favor_digite_los_siguientes_datos">Por favor digite los siguientes datos:</string>
 
     <string name="datos_basicos">Datos básicos</string>
     <string name="primer_nombre">Primer nombre</string>
