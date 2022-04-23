@@ -13,5 +13,15 @@
     <string name="primer_apellido">Primer apellido</string>
     <string name="profesion">Profesión</string>
 
+    <string-array name="profesiones">
+        <item>Médico</item>
+        <item>Estudiante</item>
+        <item>Enfermero</item>
+    </string-array>
+
+    <string name="datos_de_usuario">Datos de usuario</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="confirmar_correo_electronico">Confirmar correo electrónico</string>
+
     <string name="logo">logo</string>
 </resources>
