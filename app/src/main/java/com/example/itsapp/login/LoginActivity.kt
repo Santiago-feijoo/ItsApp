@@ -1,8 +1,10 @@
 package com.example.itsapp.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.itsapp.BuildConfig
+import com.example.itsapp.create_account.CreateAccountActivity
 import com.example.itsapp.databinding.ActivityLoginBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,6 +27,17 @@ class LoginActivity: AppCompatActivity() {
     private fun initComponents() {
         "Versión ${BuildConfig.VERSION_NAME}".apply {
             binding.textViewVersionApp.text = this
+
+        }
+
+        initListener()
+
+    }
+
+    private fun initListener() {
+        binding.textViewCreateAccount.setOnClickListener {
+            intent = Intent(this, CreateAccountActivity::class.java)
+            startActivity(intent)
 
         }
 

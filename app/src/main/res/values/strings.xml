@@ -8,5 +8,10 @@
     <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
     <string name="crear_cuenta">Crear cuenta</string>
 
+    <string name="datos_basicos">Datos básicos</string>
+    <string name="primer_nombre">Primer nombre</string>
+    <string name="primer_apellido">Primer apellido</string>
+    <string name="profesion">Profesión</string>
+
     <string name="logo">logo</string>
 </resources>

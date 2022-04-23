@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ItsApp">
         <activity
+            android:name=".create_account.CreateAccountActivity"
+            android:exported="false" />
+        <activity
             android:name=".login.LoginActivity"
             android:exported="true">
             <intent-filter>
