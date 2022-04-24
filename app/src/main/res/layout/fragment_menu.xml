@@ -71,7 +71,8 @@
             android:hint="@string/buscar"
             android:textSize="16sp"
             android:backgroundTint="@color/white"
-            android:backgroundTintMode="add"/>
+            android:backgroundTintMode="add"
+            android:singleLine="true"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,6 +116,7 @@
         android:id="@+id/recycleView_of_results"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_infection"
 
         android:layout_marginTop="8dp"

@@ -27,6 +27,15 @@
     <string name="confirmar_correo_electronico">Confirmar correo electrónico</string>
 
     <string name="logo">logo</string>
+
+    <string-array name="infections">
+        <item>Uretritis</item>
+        <item>Úlceras genitales</item>
+        <item>Flujo vaginal</item>
+        <item>Proctitis</item>
+        <item>Hepatitis</item>
+    </string-array>
+
     <string name="mensaje_menu">Protocolo de diagnóstico y tratamiento de las infecciones de transmisión sexual Colombia</string>
 
     <string name="buscar">Buscar…</string>
