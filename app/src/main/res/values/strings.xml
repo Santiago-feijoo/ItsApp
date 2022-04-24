@@ -33,7 +33,9 @@
         <item>Úlceras genitales</item>
         <item>Flujo vaginal</item>
         <item>Proctitis</item>
-        <item>Hepatitis</item>
+        <item>Cervicitis</item>
+        <item>Hepatitis B</item>
+        <item>Virus del Papiloma Humano</item>
     </string-array>
 
     <string name="mensaje_menu">Protocolo de diagnóstico y tratamiento de las infecciones de transmisión sexual Colombia</string>
