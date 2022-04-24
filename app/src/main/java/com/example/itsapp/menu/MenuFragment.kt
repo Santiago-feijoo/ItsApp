@@ -13,16 +13,19 @@ import androidx.navigation.fragment.findNavController
 import com.example.itsapp.R
 import com.example.itsapp.adapters.AdapterInfections
 import com.example.itsapp.databinding.FragmentMenuBinding
+import com.example.itsapp.persistence.entities.Infections
+import com.example.itsapp.tools.DialogTools
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MenuFragment: Fragment() {
+class MenuFragment: Fragment(), AdapterInfections.OnClick {
     /** ATRIBUTOS **/
     private lateinit var binding: FragmentMenuBinding
     private lateinit var navController: NavController
     private val viewModel: MenuViewModel by viewModels()
-    @Inject lateinit var adapterInfections: AdapterInfections
+    private lateinit var adapterInfections: AdapterInfections
+    @Inject lateinit var dialogTools: DialogTools
 
     /** METODOS **/
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +34,8 @@ class MenuFragment: Fragment() {
         arguments?.let {
 
         }
+
+        adapterInfections = AdapterInfections(this)
 
         observer()
         viewModel.setInfections(resources.getStringArray(R.array.infections))
@@ -94,6 +99,14 @@ class MenuFragment: Fragment() {
         viewModel.loadInfections.observe(this) { data ->
             Log.i("MenuFragment", "¡Infecciones cargadas correctamente!")
             adapterInfections.setData(data)
+
+        }
+
+    }
+
+    override fun onClickInfection(infection: Infections) {
+        dialogTools.viewDetailsInfection(requireActivity(), infection) {
+            dialogTools.alertDialog.dismiss()
 
         }
 

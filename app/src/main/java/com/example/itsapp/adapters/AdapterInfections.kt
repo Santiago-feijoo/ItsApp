@@ -9,9 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.itsapp.R
 import com.example.itsapp.databinding.ItemInfectionBinding
 import com.example.itsapp.persistence.entities.Infections
-import javax.inject.Inject
 
-class AdapterInfections @Inject constructor(): RecyclerView.Adapter<AdapterInfections.ViewHolder>() {
+class AdapterInfections(private val onClick: OnClick): RecyclerView.Adapter<AdapterInfections.ViewHolder>() {
     /** ATRIBUTOS **/
     private val oldInfectionsList: ArrayList<Infections> = ArrayList()
     private val newInfectionsList: ArrayList<Infections> = ArrayList()
@@ -24,7 +23,7 @@ class AdapterInfections @Inject constructor(): RecyclerView.Adapter<AdapterInfec
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(newInfectionsList[position])
+        holder.bind(newInfectionsList[position], onClick)
 
     }
 
@@ -35,7 +34,7 @@ class AdapterInfections @Inject constructor(): RecyclerView.Adapter<AdapterInfec
             val bundle = payloads[0] as Bundle
 
             if(bundle.getString("update") != null) {
-                holder.bind(newInfectionsList[position])
+                holder.bind(newInfectionsList[position], onClick)
 
             }
 
@@ -50,8 +49,13 @@ class AdapterInfections @Inject constructor(): RecyclerView.Adapter<AdapterInfec
     class ViewHolder(item: View): RecyclerView.ViewHolder(item) {
         private val binding: ItemInfectionBinding = ItemInfectionBinding.bind(item)
 
-        fun bind(infection: Infections) {
+        fun bind(infection: Infections, onClick: OnClick) {
             binding.textViewNameInfection.text = infection.nameInfection
+
+            binding.cardViewItemInfection.setOnClickListener {
+                onClick.onClickInfection(infection)
+
+            }
 
         }
 
@@ -66,6 +70,11 @@ class AdapterInfections @Inject constructor(): RecyclerView.Adapter<AdapterInfec
         newInfectionsList.clear()
         newInfectionsList.addAll(newList)
         diffResult.dispatchUpdatesTo(this)
+
+    }
+
+    interface OnClick {
+        fun onClickInfection(infection: Infections)
 
     }
 
