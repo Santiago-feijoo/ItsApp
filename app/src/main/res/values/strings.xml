@@ -43,4 +43,9 @@
     <string name="buscar">Buscar…</string>
     <string name="infeccion">Infección</string>
     <string name="nombre_de_infeccion">Nombre de la infección</string>
+    <string name="definicion">Definición</string>
+    <string name="diagnostico">Diagnóstico</string>
+    <string name="sin_descripcion">Sin descripción</string>
+    <string name="descripcion_uretritis">Paciente hombre o mujer con vida sexual activa que representa disuria, prurito uretral, y salida de secreción mucopurulenta, mucoide, o purulenta por la uretra.</string>
+    <string name="diagnostico_uretritis">Condiciones del paciente para la toma de la muestra: no estar tomando antibióticos. La muestra ideal es la secreción uretral para lo cual se recomienda no haber orinado por dos horas como mínimo. Se le debe advertir al paciente que no descarte la primera porción del chorro urinario.\n\n\u2022 Una coloración de Gram de la secreción o del hisopado uretral con reacción leucocitaria es indicativa de diagnóstico de uretritis.\n\u2022 A todo paciente a quien se le diagnostica una ITS, se le debe solicitar prueba de VIH y de sífilis.\n\u2022 La coinfección por N. gonorrhoeae y C. trachomatis en un paciente con uretritis es frecuente.</string>
 </resources>

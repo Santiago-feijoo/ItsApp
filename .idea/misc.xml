@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/drawable/ic_arrow_back.xml" value="0.185" />
+        <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/drawable/ic_close.xml" value="0.185" />
         <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/drawable/logo.xml" value="0.121" />
         <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/layout/activity_create_account.xml" value="0.2" />
         <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/layout/activity_login.xml" value="0.13580246913580246" />
         <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/layout/activity_menu.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/layout/dialog_details_infection.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/layout/fragment_menu.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/layout/item_infection.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/57310/AndroidStudioProjects/ItsApp/app/src/main/res/layout/layout_details_infection.xml" value="0.182518115942029" />
